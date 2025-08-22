@@ -17,21 +17,18 @@ O objetivo é implementar e testar funcionalidades reais com foco em **component
 
 ## 📂 Estrutura do projeto
 
-.
-├── app
-│   ├── components
-│   │   └── NovaTarefa.tsx
-│   ├── hooks
-│   │   └── ContadorDeTarefas.tsx
-│   ├── lib
-│   │   └── tarefas.ts
-│   │
-│   ├── tests
-│   │    ├── ContadorDeTarefas.test.tsx
-│   │    ├── NovaTarefa.test.tsx
-│   │    └── page.test.tsx
-│   │
-│   └── page.tsx
+app/
+└── page.tsx
+components/
+└── NovaTarefa.tsx
+hooks/
+└── useContadorDeTarefas.ts
+lib/
+└── tarefas.ts 
+tests/
+├── NovaTarefa.test.tsx
+├── useContadorDeTarefas.test.ts
+└── page.test.tsx
 
 
 ---
