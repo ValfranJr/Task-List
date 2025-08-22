@@ -31,6 +31,7 @@ const NovaTarefa = () => {
         <div className="p-4">
           <div className="flex mb-4">
             <input
+              role="textbox"
               placeholder="Adicione uma nova tarefa..."
               value={nome}
               onChange={(e) => setNome(e.target.value)}
@@ -42,8 +43,10 @@ const NovaTarefa = () => {
               className="flex-grow p-2 rounded-md border border-gray-300"
             />
             <button
+              role="button"
               onClick={adicionarTarefa}
               className="ml-2 bg-blue-500 text-white px-4 py-2 rounded-md"
+              disabled={nome.trim() === ""}
             >
               Adicionar
             </button>
