@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Lista de Tarefas — Next.js 15 + Jest + Testing Library
 
-## Getting Started
+Projeto desenvolvido para colocar em prática conceitos de **testes unitários** em **Next.js 15 (App Router)** com **TypeScript**.
 
-First, run the development server:
+O objetivo é implementar e testar funcionalidades reais com foco em **componentes reutilizáveis**, **Server Components** e **hooks personalizados**.
 
+---
+
+## 🚀 Tecnologias utilizadas
+- [Next.js 15](https://nextjs.org/) — App Router + TypeScript
+- [TypeScript](https://www.typescriptlang.org/)
+- [Jest](https://jestjs.io/) — Test Runner
+- [Testing Library](https://testing-library.com/docs/react-testing-library/intro/) — Testes de UI
+- Conventional Commits — Padrão para mensagens de commit
+
+---
+
+## 📂 Estrutura do projeto
+
+.
+├── app
+│   ├── components
+│   │   └── NovaTarefa.tsx
+│   ├── hooks
+│   │   └── ContadorDeTarefas.tsx
+│   ├── lib
+│   │   └── tarefas.ts
+│   │
+│   ├── tests
+│   │    ├── ContadorDeTarefas.test.tsx
+│   │    ├── NovaTarefa.test.tsx
+│   │    └── page.test.tsx
+│   │
+│   └── page.tsx
+
+
+---
+
+## 📌 Funcionalidades
+- ✅ Exibir lista de tarefas mockada (simulação de API local)
+- ✅ Adicionar nova tarefa via formulário controlado
+- ✅ Contar tarefas atuais com hook `useContadorDeTarefas`
+- ✅ Testes unitários para:
+  - Componente `<NovaTarefa />`
+  - Hook `useContadorDeTarefas`
+  - Renderização da página `app/page.tsx`
+
+---
+
+## 🧪 Testes
+
+Foram utilizados **Jest** e **Testing Library** para garantir:
+- Renderização correta dos elementos
+- Validação do formulário
+- Submissão de novas tarefas
+- Valores retornados pelo hook
+- Renderização da página com lista inicial
+
+Rodando os testes:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# executar todos os testes
+npm test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Como rodar o projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1- Clonar o repositório
+````bash
+git clone https://github.com/usuario/repositorio.git
+cd repositorio
+````
+2- Instalar dependências
 
-## Learn More
+````bash
+npm install
+# ou
+pnpm install
+````
 
-To learn more about Next.js, take a look at the following resources:
+3- Rodar em modo desenvolvimento
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+````bash
+npm run dev
+````
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4- Visualizando o projeto no navegador
 
-## Deploy on Vercel
+Abrir o navegador em http://localhost:3000
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 Como rodar os testes
+ Após a instalação dos pacotes, rodar os testes é simples:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1- Rodar o projeto em modo desenvolvimento
+````bash
+npm run dev
+````
+
+2- Rodar os testes
+````bash
+npm test
+````
+
+---
