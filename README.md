@@ -19,12 +19,16 @@ O objetivo é implementar e testar funcionalidades reais com foco em **component
 
 app/
 └── page.tsx
+
 components/
 └── NovaTarefa.tsx
+
 hooks/
 └── useContadorDeTarefas.ts
+
 lib/
-└── tarefas.ts 
+└── tarefas.ts
+
 tests/
 ├── NovaTarefa.test.tsx
 ├── useContadorDeTarefas.test.ts
