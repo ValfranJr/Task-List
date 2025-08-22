@@ -69,8 +69,8 @@ npm test
 
 1- Clonar o repositório
 ````bash
-git clone https://github.com/usuario/repositorio.git
-cd repositorio
+git clone https://github.com/ValfranJr/Task-List
+cd Task-List
 ````
 2- Instalar dependências
 
